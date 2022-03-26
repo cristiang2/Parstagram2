@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  Parstagram2
 //
-//  Created by stavroula guerrero on 3/26/22.
+//  Created by c.guerrero on 3/26/22.
 //
 
 import UIKit
