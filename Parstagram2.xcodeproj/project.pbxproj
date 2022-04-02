@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		196D39F3DFEE122CADD2C623 /* Pods_Parstagram2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72F901077B3D0B12584F6B4 /* Pods_Parstagram2.framework */; };
+		719DB35227F8A82B008F00CF /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719DB35127F8A82B008F00CF /* CommentCell.swift */; };
+		71FF575F27F8BC21007FA276 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 71FF575E27F8BC21007FA276 /* MessageKit */; };
 		8C0BF96527EEDB750072C33C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF96427EEDB750072C33C /* AppDelegate.swift */; };
 		8C0BF96727EEDB750072C33C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0BF96627EEDB750072C33C /* SceneDelegate.swift */; };
 		8C0BF96C27EEDB750072C33C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C0BF96A27EEDB750072C33C /* Main.storyboard */; };
@@ -45,6 +47,7 @@
 		3FE51C42BBD68B3CEA17C8E9 /* Pods-Parstagram2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram2.release.xcconfig"; path = "Target Support Files/Pods-Parstagram2/Pods-Parstagram2.release.xcconfig"; sourceTree = "<group>"; };
 		535C4E71E125AC7B3C590543 /* Pods-Parstagram2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram2.debug.xcconfig"; path = "Target Support Files/Pods-Parstagram2/Pods-Parstagram2.debug.xcconfig"; sourceTree = "<group>"; };
 		620DF4E08D616263A84AEF82 /* Pods-Parstagram2-Parstagram2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram2-Parstagram2UITests.release.xcconfig"; path = "Target Support Files/Pods-Parstagram2-Parstagram2UITests/Pods-Parstagram2-Parstagram2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		719DB35127F8A82B008F00CF /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		8C0BF96127EEDB750072C33C /* Parstagram2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C0BF96427EEDB750072C33C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C0BF96627EEDB750072C33C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				196D39F3DFEE122CADD2C623 /* Pods_Parstagram2.framework in Frameworks */,
+				71FF575F27F8BC21007FA276 /* MessageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +156,7 @@
 				8C39134127EEE50400CADAA9 /* FeedViewController.swift */,
 				8CE0E8F827EEED5900BCD7FD /* CameraViewController.swift */,
 				8C47940827EFA57100E09451 /* PostCell.swift */,
+				719DB35127F8A82B008F00CF /* CommentCell.swift */,
 				8C0BF96A27EEDB750072C33C /* Main.storyboard */,
 				8C0BF96F27EEDB770072C33C /* LaunchScreen.storyboard */,
 				8C0BF96D27EEDB770072C33C /* Assets.xcassets */,
@@ -196,6 +201,9 @@
 			dependencies = (
 			);
 			name = Parstagram2;
+			packageProductDependencies = (
+				71FF575E27F8BC21007FA276 /* MessageKit */,
+			);
 			productName = Parstagram2;
 			productReference = 8C0BF96127EEDB750072C33C /* Parstagram2.app */;
 			productType = "com.apple.product-type.application";
@@ -271,6 +279,9 @@
 				Base,
 			);
 			mainGroup = 8C0BF95827EEDB750072C33C;
+			packageReferences = (
+				71FF575D27F8BC21007FA276 /* XCRemoteSwiftPackageReference "MessageKit" */,
+			);
 			productRefGroup = 8C0BF96227EEDB750072C33C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,6 +434,7 @@
 				8C39134227EEE50400CADAA9 /* FeedViewController.swift in Sources */,
 				8C0BF96727EEDB750072C33C /* SceneDelegate.swift in Sources */,
 				8C47940927EFA57100E09451 /* PostCell.swift in Sources */,
+				719DB35227F8A82B008F00CF /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,7 +612,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GC6UL8XKJ2;
+				DEVELOPMENT_TEAM = B2G2Z7KJV3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Parstagram2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -608,7 +620,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +642,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = GC6UL8XKJ2;
+				DEVELOPMENT_TEAM = B2G2Z7KJV3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Parstagram2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -638,7 +650,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -772,6 +784,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71FF575D27F8BC21007FA276 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71FF575E27F8BC21007FA276 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71FF575D27F8BC21007FA276 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C0BF95927EEDB750072C33C /* Project object */;
 }
